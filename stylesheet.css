@@ -1,0 +1,123 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.login-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Login Form Styles */
+.login-form {
+    flex: 1;
+    background: #003865; /* Tata Power's dark blue color */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.login-form h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.login-form p {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.login-form .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background: #00a859; /* Tata Power's green color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background: #008a48;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.forgot-password a {
+    color: #00a859;
+    text-decoration: none;
+}
+
+/* Info Section Styles */
+.info-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.info-section h2 {
+    font-size: 24px;
+    color: #003865;
+}
+
+.info-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.info-section .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 56, 101, 0.2); /* Faint overlay with Tata Power blue */
+    z-index: 1;
+}
+
+.info-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.8; /* Faint effect for the image */
+}
